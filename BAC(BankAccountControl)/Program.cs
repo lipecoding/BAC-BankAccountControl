@@ -4,17 +4,18 @@ namespace BAC_BankAccountControl_
 {
     class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             try
             {
+                Console.Clear();
                 Console.WriteLine("Bem vindo ao BAC!");
+                Console.ReadLine();
                 do
                 {
                     string accountInfo = string.Empty;
                     Model.AccountData accountData = new Model.AccountData();
                     Console.Clear();
-                    Console.WriteLine();
                     Console.WriteLine("Digite o numero da agência/conta");
 
                     accountInfo = Console.ReadLine();
@@ -26,6 +27,7 @@ namespace BAC_BankAccountControl_
 
 
                         new View.AccountBalance(accountData.Agency, accountData.AccountNumber);
+                        return;
                     }
                 }
                 while (true);
