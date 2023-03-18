@@ -1,15 +1,14 @@
 
-# BAC - MongoDB
+# BAC(BankAccountControl)
 
-A simple remake of [BAC-BankAccountControl](https://github.com/lipecoding/BAC-BankAccountControl-) using MongoDB.
+A simple bank system in C#.
 
 
 ## Features
 
-- Balance tranfer
 - Check Balance
 - Change currency
-- Withdraw
+- Add Balance
 
 
 ## Authors
